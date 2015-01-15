@@ -1,0 +1,5 @@
+Website URL: http://www.hotel-oxford.ro/poze-hotel-timisoara.htm
+
+This website appeals the most to my desired design aesthetic. The most useful use (hehe, "useful use") of Javascript is on the page that I've linked above; it's a simple image slider that includes a barely-noticeable image-loading bar at the top of the content section, and the images roll up like a little elevator. 
+
+I also really like that the content is contained within a minimally-styled square section that is centered in the middle of the page. The page reloads quickly and in a subtle way, where you can barely notice any changes besides the images and the header title. I believe that has something to do with jQuery or AJAX? :)

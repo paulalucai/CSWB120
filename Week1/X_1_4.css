@@ -1,0 +1,17 @@
+body {
+	background-color: silver;
+	font-family: Arial, sans-serif;
+}
+#main {
+	background-color: #ffffff;
+}
+#main p {
+	font-weight: bold;
+}
+.bluetext {
+	color: blue;
+}
+
+.redtext {
+	color: red;
+}

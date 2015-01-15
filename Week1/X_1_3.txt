@@ -1,0 +1,3 @@
+<section> Tag: This semantic tag tells us that there is a group of content with a certain theme, and usually includes a heading.
+
+<article> Tag: According to W3Schools, this tag represents self-contained content that should be able to be read independently from the rest of the website.
