@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 4-1 Solution</title>
+	<meta charset="UTF-8">
+	<script>
+
+	function calculateMessage() {
+		var firstname = document.getElementById("fname").value;
+		var age = document.getElementById("age").value;
+		var hours;
+
+		if (document.getElementById("r6").checked) {
+			hours = 6;
+		}
+
+		if (document.getElementById("r7").checked) {
+			hours = 7;
+		}
+
+		if (document.getElementById("r8").checked) {
+			hours = 8;
+		}
+
+		if (document.getElementById("r9").checked) {
+			hours = 9;
+		}
+
+		var message = document.getElementById("message");
+
+		var years_slept = (hours * age) / 24;
+
+		var years_slept_2 = years_slept.toFixed(2);
+
+		var myHTML = "Well there " + firstname + ", you've slept " + years_slept_2 + " years of your life away!";
+
+		message.firstChild.nodeValue = myHTML;
+
+	}
+
+	</script>
+</head>
+
+<body bgColor=silver style="font-family: Arial, Helvetica, sans-serif;">
+<h1>My Unconscious Life</h1>
+
+<form>
+<table cellpadding="10">
+
+<tr>
+<td>First Name</td>
+<td><input type="text" id="fname" size="30"></td>
+</tr>
+
+<tr>
+<td>How Old Are You?</td>
+<td><select id="age" size="1">
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+</select></td>
+</tr>
+
+<tr>
+<td>How Many Hours <br>Do You Sleep At Night?</td>
+
+<td>
+<br>6: <input type="radio" id="r6" name="hours" checked>
+<br>7: <input type="radio" id="r7" name="hours">
+<br>8: <input type="radio" id="r8" name="hours">
+<br>9: <input type="radio" id="r9" name="hours">
+</td>
+</tr>
+
+</table>
+
+<br><br>
+<input type="button" value="Calculate Years Slept" onclick="return calculateMessage()";>
+
+</form>
+
+<p id="message">*</p>
+
+</body>
+</html>

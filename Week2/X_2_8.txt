@@ -1,0 +1,1 @@
+The most useful thing about the Debugging video was how you identified all of the various error messages that you were receiving (which came from both the HTML and the Javascript documents), and identified the best way to look closely and fix them.

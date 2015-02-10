@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 3 - Register</title>
+
+	<link rel="stylesheet" type="text/css" href="asgn_3.css">
+	<script src="asgn_3.js"></script>
+
+</head>
+
+<body>
+
+<div id="logo">
+	<img src="http://profperry.com/Classes20/JQuery/KingLibLogo.jpg" alt="King Real Estate Logo">
+</div>
+
+<div id="patron">
+	<form method="post" id="myform" action="http://profperry.com/Classes20/JQuery/Assignment_3_PHP/assignment_3.php">
+
+	<p class="topofdiv">Please sign up</p>
+
+	<p>
+	First Name:<br>
+	<input type="text" name="firstname" id="firstname" size="30">
+	<span id="firstnameerror">*</span>
+	</p>
+
+	<p>
+	Last Name:<br>
+	<input type="text" name="lastname" id="lastname" size="30">
+	<span id="lastnameerror">*</span>
+	</p>
+
+	<p>
+	Email:<br>
+	<input type="text" name="email" id="email" size="40">
+	<span id="emailerror">*</span>
+	</p>
+
+	<p>
+	City of Residence<br>
+	<select name="city" id="city" size="1" >
+		<option value="-">-</option>
+		<option value="Chicago">Chicago</option>
+		<option value="Detroit">Detroit</option>
+		<option value="Toronto">Toronto</option>
+	</select>
+	<span id="cityerror">*</span>
+	</p>
+
+	<p>
+		Donation for the "Books for Kids" program  (Enter 0 if none): <br>
+		<input type="text" name="donation" id="donation" size="7">
+		<span id="donationerror">*</span>
+	</p>
+
+	<p>
+		<input type="button" id="addpatron" value="Add Patron">&nbsp;&nbsp;&nbsp;
+		<input type="button" id="clearfields" value="Clear Fields">&nbsp;&nbsp;&nbsp;
+		<span id="endmessage">*</span>
+	</p>
+
+
+
+	</form>
+
+</div>
+
+</body>
+</html>
